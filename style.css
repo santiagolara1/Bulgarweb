@@ -1,0 +1,299 @@
+@font-face {
+    font-family: nb;
+    src: url(./fuente/NBInternationalProBoo.ttf);
+}
+
+@font-face {
+    font-family: rh;
+    src: url(./fuente/Rejouice-Headline.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: nb;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+}
+
+#cursor{
+    height: 7vw;
+    width: 7vw;
+    background-color: #E8FF02;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+}
+
+#cursor h5{
+    font-size: 1.15vw;
+    font-weight: 500;
+}
+
+#page1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+#page1-content{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3vw 3vw;
+}
+
+nav h3{
+    font-size: 1.4vw;
+    font-weight: 100;
+    font-family: rh;
+}
+
+nav h4{
+    font-size: 1.4vw;
+    font-weight: 100;
+    font-family: rh;
+}
+
+
+
+
+
+#page1-content h1{
+
+    font-size: 27vw;
+    font-weight: 100;
+    line-height: 27vw;
+    font-family: rh;
+    
+}
+
+#page1-content h1 span{
+
+    font-family: rh;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    padding: 5vw 2.8vw;
+}
+
+#page2-top{
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 1.2vw;
+    margin-bottom: 1vw;
+    border-bottom: 1px solid black;
+
+}
+
+#page2-top img{
+    font-size: 1.7vw;
+    font-weight: 500;
+    width: 5%;
+}
+
+#page2-top h4{
+    font-size: 1.7vw;
+    font-weight: 500;
+}
+
+.elem{
+    overflow: hidden;
+}
+
+.elem h1{
+    font-size: 3.2vw;
+    font-weight: 500;
+}
+
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 3vw;
+}
+
+#page3-top{
+    text-align: center;
+}
+
+#page3-top h2{
+    margin-bottom: 2vw;
+    font-size: 4vw;
+    font-weight: 600;
+}
+
+#page3-top span{
+    padding: 1.5vw;
+    font-size: 2vw;
+    font-weight: 300;
+    transition: width .3s
+}
+
+
+#page3-top #palabra:hover{
+    padding: 1.5vw;
+    font-size: 2vw;
+    font-weight: 300;
+    border-bottom: 1px solid black;
+    transition: width .3s
+}
+
+#page3-elements{
+    height: 40vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+    margin-top: 7vw;
+}
+
+#page3-elements .box{
+    height: 100%;
+    width: 32.5%;
+    /* background-color: blue; */
+    position: relative;
+}
+
+#page3-elements .box video{
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+#page3-elements .box img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+    object-fit: cover;
+    object-position: center;
+    transition: all ease 1s;
+}
+
+#page3-elements .box:hover img{
+    opacity: 0;
+}
+
+#page3-2{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    padding: 5vw 2.8vw;
+}
+
+#page3-2-top{
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 1.2vw;
+    margin-bottom: 1vw;
+    border-bottom: 1px solid black;
+
+}
+
+#page3-2-top img{
+    font-size: 1.7vw;
+    font-weight: 500;
+    width: 5%;
+}
+
+#page3-2-top h4{
+    font-size: 1.7vw;
+    font-weight: 500;
+}
+
+.elem-1{
+    overflow: hidden;
+}
+
+.elem-1 h1{
+    font-size: 3.2vw;
+    font-weight: 500;
+}
+
+#page4{
+    height: 100vh;
+    width: 100%;
+    padding: 4vw 0;
+    position: relative;
+}
+
+#page4 h1{
+    font-size: 10vw;
+    font-family: rh;
+    font-weight: 100;
+    border-bottom: 1px solid black;
+    /* background-color: red; */
+    width: 96%;
+    margin-left: 2%;
+}
+
+#swiperdiv{
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    margin-top: -5%;
+}
+
+.swiper {
+    width: 120%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    width: 400px ;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 18%;
+    object-fit: cover;
+  }
+
+  
