@@ -20,6 +20,23 @@ html, body{
     width: 100%;
 }
 
+.loader{
+    background-color: #000;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s ease;
+}
+.loader h2 span{
+    display: inline-block;
+    color: #fff;
+    font-weight: lighter;
+}
+
 #page1{
     width: 100%;
     height: 100vh;
@@ -28,22 +45,238 @@ html, body{
 }
 
 #cursor{
-    height: 7vw;
     width: 7vw;
-    background-color: #E8FF02;
-    border-radius: 50%;
-    position: fixed;
-    z-index: 9;
+    height: 7vw;
+    background-color: #FF5F38;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
+    position: fixed;
     transform: translate(-50%,-50%);
+    z-index: 4;
+}
+#cursor h5{
+    font-size: 1.2vw;
+    font-weight: lighter;
+    color: #1a1919;
 }
 
-#cursor h5{
-    font-size: 1.15vw;
-    font-weight: 500;
+ /* menu */
+
+.menu{
+    height: 0vh;
+    position: absolute;
 }
+.menu.active{
+    position: absolute;
+    z-index: 6;
+    height: 55vh;
+    width: 100vw;
+    background-color: #FF5F38;
+}
+.menu-header{
+    height: 40px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 3vw;
+    margin-top: 2vw;
+}
+.menu-header a{
+    color: #2D2B2B;
+    text-decoration: none;
+    font-weight: lighter;
+    cursor: pointer;
+    font-weight: lighter;
+    font-size: 1.5vw;
+    letter-spacing: -1px;
+}
+.menu-header #close{
+    position: relative;
+    cursor: pointer;
+}
+.menu-header #close a{
+    cursor: pointer;
+}
+.menu-header #close::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .35s ease-out;
+    cursor: pointer;
+}
+.menu-header #close:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    cursor: pointer;
+}
+
+#close {
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    
+}
+  
+#close:hover {
+    text-decoration: underline;
+}
+  
+  
+.menu-sec{
+    height: 250px;
+    width: 100vw;
+    padding: 0vw 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.menu-sec .vid{
+    height: 250px;
+    width: 300px;
+    border-radius: 8px;
+    position: relative;
+}
+.menu-sec .vid video{
+    width: 300px;
+    height: 220px;
+    border-radius: 8px;
+}
+.menu-sec .vid .play{
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    gap: 5px;
+    font-weight: lighter;
+}
+.menu-sec .vid .play #play{
+    position: relative;
+}
+.menu-sec .vid .play #play::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .35s ease-out;
+}
+.menu-sec .vid .play #play:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.menu-sec .vid .play i{
+    color: #fff;
+}
+.menu-sec .vid .play h4{
+    font-weight: lighter;
+    font-size: 1.1vw;
+    margin-left: 170px;
+}
+
+.menu-sec .links{
+    position: relative;
+    
+}
+.menu-sec .links h3{
+    font-size: 3.1vw;
+    font-weight: lighter;
+    margin-right: 15vw;
+    cursor: pointer;
+    line-height: 1;
+    position: relative;
+}
+.menu-sec .links h3::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 50%;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    background-color: #000;
+    transform-origin: bottom right;
+    transition: transform .35s ease-out;
+}
+.menu-sec .links h3:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.menu-sec .links button{
+    background-color: transparent;
+    border: 1px solid #000;
+    padding: 1vw 1.8vw;
+    border-radius: 5px;
+    font-size: 1.2vw;
+    margin: 1.5vw 0vw 0vw 1.5vw;
+    cursor: pointer;
+}
+.menu-sec .links button:hover{
+    background-color: #000;
+    color: #FF5F38;
+    transition: background-color .3s ease;
+}
+.menu .menu-border{
+    height: 1px;
+    width: 0vw;
+    margin: 4vw 3vw 0vw 3vw;
+    background-color: #2D2B2B;
+}
+.menu .small-links{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+}
+.menu .small-links h4{
+    font-weight: lighter;
+    padding: 1vw 3vw;
+}
+.menu .small-links h3{
+    font-weight: lighter;
+    font-size: 1.2vw;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu .small-links .social{
+    display: flex;
+    justify-content: space-around; /* Opcional: ajusta el espacio entre los elementos */
+    align-items: center; /* Opcional: alinea verticalmente los elementos */
+    position: relative;
+    right: 5%;
+}
+.menu .small-links h3::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 80%;
+    bottom: 25%;
+    left: 10%;
+    transform: scaleX(0);
+    background-color: #000;
+    transform-origin: bottom right;
+    transition: transform .35s ease-out;
+}
+.menu .small-links h3:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+ /* menu */
 
 #page1 video{
     height: 100%;
@@ -84,9 +317,13 @@ nav h4{
     font-family: rh;
 }
 
-
-
-
+#page1-content nav a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: lighter;
+    cursor: pointer;
+    font-size: 1.4vw;
+}
 
 #page1-content h1{
 
@@ -150,6 +387,7 @@ nav h4{
 
 #page3-top{
     text-align: center;
+    padding-bottom: 10vw;
 }
 
 #page3-top h2{
@@ -296,4 +534,140 @@ nav h4{
     object-fit: cover;
   }
 
-  
+ /* footer*/
+
+ footer{
+    height: 100vh;
+    width: 100vw;
+    background-color:#0E0E0E;
+}
+footer .footer-top{
+    height: 65vh;
+    width: 100vw;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-top .first {
+    font-size: 10px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 15vw; */
+    padding-left: 2.5vw;
+    color: #fff;
+}
+.footer-top .first .first-top h2{
+    font-weight: light;
+    font-family: nb;
+}
+.footer-top .first .first-top button{
+    padding:  15px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    font-size: 1.1vw;
+    font-weight: lighter;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+.footer-top .first .first-top button:hover{
+    background-color: #fff;
+    color: #000;
+}
+.footer-top .first .first-btm h4{
+    font-weight: lighter;
+}
+.footer-top .second{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    padding-right: 3vw;
+    color: #fff;
+}
+.second .second-one {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+}
+.second .second-one .span span{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+}
+.second .second-one .span>span::after,.second .second-one .span1>span::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0%;
+    left: 0%;
+    transform: scaleX(0);
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform .35s ease-out;
+}
+.second .second-one .span>span:hover::after,.second .second-one .span1>span:hover::after{
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+.second .second-two {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 17.5vw;
+}
+.second .second-two .span span{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+.second .second-two .span>span::after,.second .second-two .span1>span::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0%;
+    left: 0%;
+    transform: scaleX(0);
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform .35s ease-out;
+}
+.second .second-two .span>span:hover::after,.second .second-two .span1>span:hover::after{
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+.second .second-two .span1{
+    position: relative;
+    cursor: pointer;
+}
+.second .second-one .span1{
+    position: relative;
+    cursor: pointer;
+}
+footer .footer-bottom{
+    height: 35vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+footer .footer-bottom h1 .last{
+    display: inline-block;
+   font-size: 22vw;
+   margin-top: -6vw;
+   color: #fff;
+   letter-spacing: 8px;
+}
+
+
+
