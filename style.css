@@ -53,7 +53,6 @@ html, body{
     justify-content: center;
     border-radius: 50%;
     position: fixed;
-    transform: translate(-50%,-50%);
     z-index: 4;
 }
 #cursor h5{
@@ -71,7 +70,7 @@ html, body{
 .menu.active{
     position: absolute;
     z-index: 6;
-    height: 55vh;
+    height: 60vh;
     width: 100vw;
     background-color: #FF5F38;
 }
@@ -192,7 +191,7 @@ html, body{
     position: relative;
     
 }
-.menu-sec .links h3{
+.menu-sec .links h3 {
     font-size: 3.1vw;
     font-weight: lighter;
     margin-right: 15vw;
@@ -200,6 +199,12 @@ html, body{
     line-height: 1;
     position: relative;
 }
+
+.menu-sec .links a{
+    text-decoration: none;
+    color: black;
+}
+
 .menu-sec .links h3::after{
     content: '';
     position: absolute;
@@ -669,5 +674,141 @@ footer .footer-bottom h1 .last{
    letter-spacing: 8px;
 }
 
+ /* footer*/
 
+  /*pagina 2 servicos*/
+
+  .page_ser{
+    height: 140vh;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    padding: 5vw 2.8vw;
+  }
+
+  .page_ser_bottom_izquierda h1{
+    padding: 5%;
+    font-style: normal;
+    width: 20%;
+  }
+
+  .page_ser_bottom_centro h2{
+
+    padding-left: 25%;
+    padding-bottom: 2%;
+    font-weight: bold;
+
+  }
+
+  .page_ser_bottom_centro{
+    width: 40%;
+    position: absolute;
+    right: 40%;
+    top: 28%;
+  }
+  
+
+  .page_ser_bottom_centro h3{
+
+    padding-left: 25%;
+    padding-bottom: 10%;
+    font-weight: lighter;
+    text-align: justify;
+    text-align-last: justify;
+    
+
+  }
+
+  .page_ser_bottom_derecha{
+    width: 20%;
+    position: absolute;
+    right: 10%;
+    top: 28%;
+  }
+
+  .page_ser_bottom_derecha h3{
+    padding-left: 20%;
+    padding-bottom: 15%;
+    font-weight: lighter;
+    text-transform: capitalize;
+  }
+
+    /*pagina 3 Nosotros*/
+
+
+    .container {
+    height: 140vh;
+    width: 100%;
+    background-color: white;
+    position: relative;
+
+    padding: 5vw 2.8vw;
+
+    margin-bottom: 100px;
+    }
+
+    
+
+    .container h2{
+        text-align: center;
+        
+    }
+
+    .container p{
+        text-align: justify;
+        font-size: 25px;
+    }
+
+    .box_valor{
+        
+        position: absolute;
+        width: 30%;
+        height: 28%;
+        padding: 10px;
+
+        left: 65%;
+        top: 10%
+        
+    }
+
+    .box_comprension{
+        
+        position: absolute;
+        width: 30%;
+        height: 15%;
+        padding: 10px;
+
+        right: 65%;
+        bottom: 10%
+    }
+
+    .box_implementacion{
+        
+        position: absolute;
+        width: 30%;
+        height: 15%;
+        padding: 10px;
+
+        right: 65%;
+        top: 10%
+    }
+
+    .box_evaluacion{
+        
+        position: absolute;
+        width: 30%;
+        height: 15%;
+        padding: 10px;
+
+        left: 65%;
+        bottom: 10%
+    }
+
+    .BOX-CENT{
+        position: absolute;
+        top: 60%;
+        left: 30%;
+
+        
+    }
 
