@@ -356,7 +356,7 @@ nav h4 {
 /* page2 */
 
 #page2 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: white;
   position: relative;
@@ -382,11 +382,14 @@ nav h4 {
   font-weight: 500;
 }
 
-.elem {
+#page2 .elem {
   overflow: hidden;
 }
 
-.elem h1 {
+#page2 .elem h1 {
+  padding-top: 5vw;
+  line-height: 1.8;
+  letter-spacing: 5px;
   font-size: 3.2vw;
   font-weight: 500;
 }
@@ -400,6 +403,7 @@ nav h4 {
   width: 100%;
   position: relative;
   padding: 3vw;
+  margin-top: 3vw;
 }
 
 #page3-top {
@@ -468,7 +472,7 @@ nav h4 {
 }
 
 #page3-2 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: white;
   position: relative;
@@ -495,11 +499,14 @@ nav h4 {
   font-weight: 500;
 }
 
-.elem-1 {
+#page3-2 .elem-1 {
   overflow: hidden;
 }
 
-.elem-1 h1 {
+#page3-2 .elem-1 h1 {
+  padding-top: 5vw;
+  line-height: 1.8;
+  letter-spacing: 5px;
   font-size: 3.2vw;
   font-weight: 500;
 }
