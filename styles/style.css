@@ -1,12 +1,14 @@
 @font-face {
   font-family: nb;
-  src: url(./fuente/NBInternationalProBoo.ttf);
+  src: url(/fuente/NBInternationalProBoo.ttf);
 }
 
 @font-face {
   font-family: rh;
-  src: url(./fuente/Rejouice-Headline.ttf);
+  src: url(/fuente/Rejouice-Headline.ttf);
 }
+
+/* inicio */
 
 * {
   margin: 0;
@@ -20,6 +22,8 @@ body {
   height: 100%;
   width: 100%;
 }
+
+/* inicio */
 
 .loader {
   background-color: #000;
@@ -37,6 +41,8 @@ body {
   color: #fff;
   font-weight: lighter;
 }
+
+/* pagina 1 */
 
 #page1 {
   width: 100%;
@@ -99,6 +105,12 @@ body {
 }
 .menu-header #close a {
   cursor: pointer;
+}
+
+.menu-header img {
+  font-size: 1.7vw;
+  font-weight: 500;
+  width: 5%;
 }
 .menu-header #close::after {
   content: "";
