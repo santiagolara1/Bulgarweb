@@ -1,11 +1,11 @@
 @font-face {
   font-family: nb;
-  src: url(/fuente/NBInternationalProBoo.ttf);
+  src: url(fuente/NBInternationalProBoo.ttf);
 }
 
 @font-face {
   font-family: rh;
-  src: url(/fuente/Rejouice-Headline.ttf);
+  src: url(fuente/Rejouice-Headline.ttf);
 }
 
 /* inicio */
@@ -758,6 +758,7 @@ footer .footer-bottom h1 .last {
   width: 100%;
   background-color: white;
   position: relative;
+  display: flex;
 
   padding: 5vw 2.8vw;
 
