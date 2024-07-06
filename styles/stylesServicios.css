@@ -702,3 +702,44 @@ footer .footer-bottom h1 .last {
   position: relative;
   padding: 5vw 2.8vw;
 }
+
+.page_ser_bottom_izquierda h1 {
+  padding: 5%;
+  font-style: normal;
+  width: 20%;
+}
+
+.page_ser_bottom_centro h2 {
+  padding-left: 25%;
+  padding-bottom: 2%;
+  font-weight: bold;
+}
+
+.page_ser_bottom_centro {
+  width: 40%;
+  position: absolute;
+  right: 40%;
+  top: 28%;
+}
+
+.page_ser_bottom_centro h3 {
+  padding-left: 25%;
+  padding-bottom: 10%;
+  font-weight: lighter;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.page_ser_bottom_derecha {
+  width: 20%;
+  position: absolute;
+  right: 10%;
+  top: 28%;
+}
+
+.page_ser_bottom_derecha h3 {
+  padding-left: 20%;
+  padding-bottom: 15%;
+  font-weight: lighter;
+  text-transform: capitalize;
+}
